@@ -5,13 +5,6 @@ Dir(){
    mkdir -p /$TO/\@appstore
  fi
 }
-Help(){
-	printf '\n%s\n\t%s' '-f' 'Target(from) volume, should be in the form of volumeX'
-	printf '\n%s\n\t%s' '-t' 'Destination(to) volume, should be in the form of volumeX'
-	printf '\n%s\n\t%s' '-a' 'If specified, will migrate all packages in current directory(Warning: careful!)'
-
-	exit 1
-}
 All(){
 Dir
 for f in /$FROM/\@appstore/*
