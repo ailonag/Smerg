@@ -1,10 +1,5 @@
 #!/bin/bash
 set -e
-Dir(){
- if [ ! -d /$TO/\@appstore ]; then
-   mkdir -p /$TO/\@appstore
- fi
-}
 All(){
 Dir
 for f in /$FROM/\@appstore/*
